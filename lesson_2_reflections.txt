@@ -1,0 +1,22 @@
+What happens when you initialize a repository? Why do you need to do it?
+ --> When you initialize a repository using the git init command, it creates a hidden .git folder where all versions of your code/ project are stored for further usage. You'll need this when commiting versions of your code in git where it'll store the ID's of the certain commits to utilize at your own leisure. 
+
+ How is the staging area different from the working directory and the repository? What value do you think it offers?
+  --> The staging area is different from the working directory and repo as the staging area places the currently added files (using the git add command) in a space where git tells you these files are ready to be committed. The working directory stores files that git does not yet recognize or store within it's folder. The repository doesn't have the commits stored since they've not been added to the staging area where commits are awaiting for each file. 
+
+ How can you use the staging area to make sure you have one commit per logical change?
+   --> We can utilize the staging area to make sure we have one commit per logical change by using the git diff --staged command whenever we add files to the staging area. There, we'll be able to view the actual changes made to the file, including the line number, which will remind us of any changes made prior to adding it to the staging area. 
+
+ What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+ 	--> Branches can be helpful in keeping my history organized by allowing me to venture into a new direction with any features I'd like to add to a project, making sure not to disturb the main master branch where the framework is solid. Branches help by allowing me to focus on core features in a project afar from the main project code, giving me freedom to experiment without causing errors/ bugs in the project. 
+
+ How do the diagrams help you visualize the branch structure?
+   --> Diagrams assist me in visualizing the branch structure in git by showing me what reachability is visually between two commits from the same/ different branch. 
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+  --> When we merge two branches together using git, both branches are combined along with their commits in a timely order (usually back to the master branch). We represent the diagram the way we do to help ourselves represent which commits pertain to what branch while helping us visualize what git merge does for us automatically under the hood. 
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+  --> The pros for git's automatic merging is that we don't have the hassle of syncing commits/ branches together one-by-one where git can do it quickly and with a timestamp associated with each commit. For the cons, we may run into merge conflicts where two branches have changes on the same line, where git will then need the user's assistance to fix the issue before merging. 
+
+
